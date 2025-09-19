@@ -10,9 +10,10 @@
     "person2.jpg": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
     "person3.jpg": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
   },
-  "todo_after_upload": [
-    "Swap Calendly URL (YOUR-HANDLE)",
-    "Set Make webhook URL (YOUR-WEBHOOK)",
-    "Replace contact details & licence number"
+  "next_steps": [
+    "Upload all files to your GitHub repo and enable GitHub Pages (main / root).",
+    "Swap Calendly URL (YOUR-HANDLE), update contact details & licence number in index.html.",
+    "Replace the form webhook URL before launch.",
+    "Drop the images into /assets/ using the filenames above."
   ]
 }

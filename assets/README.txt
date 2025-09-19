@@ -1,12 +1,21 @@
-Assets folder — save images with these exact filenames:
+Add your image files in this folder with these exact names so the site works immediately:
 
-Required:
-- hero.jpg, og-image.jpg, about.jpg
-- service1.jpg, service2.jpg, service3.jpg, service4.jpg
-- person1.jpg, person2.jpg, person3.jpg
-- trust1.png, trust2.png, trust3.png, trust4.png
-- signature.png, favicon.ico
+Required images
+- hero.jpg            (Hero lifestyle image)
+- og-image.jpg        (Social share image 1200×630 — can be hero resized)
+- about.jpg           (About/team image)
+- service1.jpg        (First-home)
+- service2.jpg        (Refinancing)
+- service3.jpg        (Investment)
+- service4.jpg        (Commercial)
+- person1.jpg         (Avatar 1)
+- person2.jpg         (Avatar 2)
+- person3.jpg         (Avatar 3)
+- trust1.png .. trust4.png (Monochrome lender/award logos)
+- signature.png       (Optional signature graphic)
+- favicon.ico         (16/32px)
 
-Notes:
-- Prefer downloading and committing images locally (no hotlinking). Compress with TinyPNG/Squoosh.
-- Update Calendly handle, webhook URL, contact info, and licence number in index.html.
+Tips
+- Use high-quality **HTTPS** images (download free from Pexels/Unsplash), compress with TinyPNG/Squoosh.
+- Update Calendly handle, phone, email, address, licence number in index.html.
+- Replace form action with your Make/Zapier webhook before going live.
