@@ -1,0 +1,23 @@
+{
+  "suggested_image_sources": {
+    "hero.jpg": "https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg",
+    "about.jpg": "https://images.pexels.com/photos/4246239/pexels-photo-4246239.jpeg",
+    "service1.jpg": "https://images.pexels.com/photos/829377/pexels-photo-829377.jpeg",
+    "service2.jpg": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+    "service3.jpg": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+    "service4.jpg": "https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg",
+    "person1.jpg": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+    "person2.jpg": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+    "person3.jpg": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    "og-image.jpg": "Use hero image resized to 1200x630 (via Canva/Squoosh)",
+    "trust1.png": "Use your lender/award logos or simple monochrome placeholders",
+    "trust2.png": "ditto",
+    "trust3.png": "ditto",
+    "trust4.png": "ditto"
+  },
+  "notes": [
+    "Download each URL and save using the exact filename.",
+    "Compress images (TinyPNG/Squoosh) before committing.",
+    "Swap Calendly URL, GA ID, FB Pixel ID, phone/email in index.html."
+  ]
+}
