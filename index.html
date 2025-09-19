@@ -14,7 +14,7 @@
   <meta property="og:title" content="A.D Brokers — Premium Mortgage Broking">
   <meta property="og:description" content="Smart, stress-free mortgage solutions with a dedicated broker.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.pexels.com/photos/829377/pexels-photo-829377.jpeg">
+  <meta property="og:image" content="https://images.pexels.com/photos/829377/pexels-photo-829377.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1200">
   <meta property="og:url" content="https://www.adbrokers.com.au">
 
   <!-- Favicon -->
@@ -22,7 +22,7 @@
 
   <!-- Tailwind (CDN) with custom theme -->
   <script>
-    tailwind = {}; /* keep for safety */
+    tailwind = {};
     tailwind.config = {
       theme: {
         extend: {
@@ -54,6 +54,13 @@
                           radial-gradient(1200px 600px at -10% 100%, rgba(15,23,42,.15), transparent 60%)}
     .shadow-hover{transition:transform .25s ease, box-shadow .25s ease}
     .shadow-hover:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(15,23,42,.14)}
+    /* Form readability fixes */
+    input, select, textarea { color:#0F172A; background:#fff; }
+    ::placeholder { color:#94A3B8; opacity:1; }
+    input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+      -webkit-text-fill-color:#0F172A !important;
+      box-shadow: 0 0 0px 1000px #fff inset !important;
+    }
     @media (prefers-reduced-motion: reduce){[data-aos]{opacity:1!important;transform:none!important;transition:none!important}}
   </style>
 </head>
@@ -62,8 +69,8 @@
   <header class="sticky top-0 z-50 glass border-b border-black/5">
     <div class="max-w-screen-xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <i data-feather="home" class="text-gold w-5 h-5"></i>
-        <span class="font-semibold">A.D Brokers</span>
+        <i data-feather="home" class="text-gold w-6 h-6"></i>
+        <span class="font-semibold text-lg md:text-xl">A.D Brokers</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-[15px]">
         <a href="#services" class="hover:text-gold-600">Services</a>
@@ -73,7 +80,7 @@
         <a href="#contact" class="hover:text-gold-600">Contact</a>
       </nav>
       <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/YOUR-HANDLE/30min'});return false;"
-         class="btn bg-brand text-white hover:bg-brand-700 px-4 py-2 text-sm shadow-soft flex items-center gap-2">
+         class="btn bg-black text-white hover:bg-black/90 px-4 py-2 text-sm shadow-soft flex items-center gap-2">
         <i data-feather="calendar" class="w-4 h-4"></i> Book Free Consultation
       </a>
     </div>
@@ -89,15 +96,22 @@
           <p class="text-slate-600 text-lg mt-4">Compare dozens of lenders and secure the right loan with a dedicated broker who handles the hard stuff.</p>
           <div class="flex flex-col sm:flex-row gap-4 mt-8">
             <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/YOUR-HANDLE/30min'});return false;"
-               class="btn bg-gold text-brand hover:bg-gold-600 px-6 py-3 font-medium shadow-soft">Book Free Consultation</a>
+               class="btn bg-black text-white hover:bg-black/90 px-6 py-3 font-medium shadow-soft">
+              Book Free Consultation
+            </a>
             <a href="tel:+61000000000" class="btn border border-brand text-brand hover:bg-white px-6 py-3 font-medium flex items-center gap-2">
               <i data-feather="phone"></i> 0000 000 000
             </a>
           </div>
         </div>
         <div class="shadow-hover" data-aos="fade-left">
-          <img src="https://images.pexels.com/photos/829377/pexels-photo-829377.jpeg"
-               alt="Happy homeowners receiving keys" class="w-full rounded-[16px] shadow-soft">
+          <img
+            src="https://images.pexels.com/photos/829377/pexels-photo-829377.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1400"
+            alt="Happy homeowners receiving keys"
+            class="w-full rounded-[16px] shadow-soft"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=80';"
+          />
         </div>
       </div>
       <div class="mt-12 opacity-80 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
@@ -137,24 +151,24 @@
   <section id="services" class="py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-4 md:px-6">
       <h2 class="text-3xl font-semibold text-center" data-aos="fade-up">Our Mortgage Services</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="50">
-          <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="First Home Buyers" class="w-full h-44 object-cover">
-          <div class="p-6"><h3 class="font-semibold text-lg">First-Home Loans</h3><p class="text-slate-600 mt-1">Navigate grants and incentives with ease.</p></div>
-        </div>
-        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Refinancing" class="w-full h-44 object-cover">
-          <div class="p-6"><h3 class="font-semibold text-lg">Refinancing</h3><p class="text-slate-600 mt-1">Lower repayments or access equity.</p></div>
-        </div>
-        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="150">
-          <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Investment Loans" class="w-full h-44 object-cover">
-          <div class="p-6"><h3 class="font-semibold text-lg">Investment Loans</h3><p class="text-slate-600 mt-1">Grow your property portfolio.</p></div>
-        </div>
-        <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg" alt="Commercial Loans" class="w-full h-44 object-cover">
-          <div class="p-6"><h3 class="font-semibold text-lg">Commercial Loans</h3><p class="text-slate-600 mt-1">Finance for business premises and assets.</p></div>
-        </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+        <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="First Home Buyers" class="w-full h-44 object-cover">
+        <div class="p-6"><h3 class="font-semibold text-lg">First-Home Loans</h3><p class="text-slate-600 mt-1">Navigate grants and incentives with ease.</p></div>
       </div>
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Refinancing" class="w-full h-44 object-cover">
+        <div class="p-6"><h3 class="font-semibold text-lg">Refinancing</h3><p class="text-slate-600 mt-1">Lower repayments or access equity.</p></div>
+      </div>
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Investment Loans" class="w-full h-44 object-cover">
+        <div class="p-6"><h3 class="font-semibold text-lg">Investment Loans</h3><p class="text-slate-600 mt-1">Grow your property portfolio.</p></div>
+      </div>
+      <div class="card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.pexels.com/photos/3184463/pexels-photo-3184463.jpeg" alt="Commercial Loans" class="w-full h-44 object-cover">
+        <div class="p-6"><h3 class="font-semibold text-lg">Commercial Loans</h3><p class="text-slate-600 mt-1">Finance for business premises and assets.</p></div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -192,48 +206,44 @@
           <div>
             <label for="loanAmount" class="block text-sm font-medium mb-1">Loan Amount ($)</label>
             <input type="text" id="loanAmount" value="600000" inputmode="decimal"
-                   class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
+                   class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
           </div>
           <div>
             <label for="interestRate" class="block text-sm font-medium mb-1">Interest Rate (%)</label>
             <input type="text" id="interestRate" value="5.75" inputmode="decimal"
-                   class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
+                   class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
           </div>
           <div>
             <label for="loanTerm" class="block text-sm font-medium mb-1">Loan Term (years)</label>
             <input type="text" id="loanTerm" value="30" inputmode="numeric"
-                   class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
+                   class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
           </div>
           <div>
             <label for="repaymentFrequency" class="block text-sm font-medium mb-1">Repayment Frequency</label>
             <select id="repaymentFrequency"
-                    class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
+                    class="w-full px-4 py-2 bg-white text-brand border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
               <option value="12">Monthly</option>
               <option value="26" selected>Fortnightly</option>
               <option value="52">Weekly</option>
             </select>
           </div>
         </div>
-        <button id="calculateBtn"
-                class="btn w-full mt-6 bg-brand text-white hover:bg-brand-700 py-3 font-medium shadow-soft">
-          Calculate Repayments
-        </button>
+        <div class="mt-6 flex justify-center">
+          <button id="calculateBtn"
+                  class="btn bg-black text-white hover:bg-black/90 px-6 py-3 font-medium shadow-soft flex items-center gap-2">
+            <i data-feather="trending-up" class="w-4 h-4"></i> Calculate Repayments
+          </button>
+        </div>
         <div id="calculatorResult" class="hidden mt-6 bg-slate-50 border border-slate-200 rounded-lg p-6">
           <h3 class="text-xl font-semibold text-brand mb-3">Your Repayment Estimate</h3>
           <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <p class="text-slate-600">Regular Repayment:</p>
-              <p id="repaymentAmount" class="text-2xl font-bold text-brand">$0</p>
-            </div>
-            <div>
-              <p class="text-slate-600">Total Interest Payable:</p>
-              <p id="totalInterest" class="text-2xl font-bold text-brand">$0</p>
-            </div>
+            <div><p class="text-slate-600">Regular Repayment:</p><p id="repaymentAmount" class="text-2xl font-bold text-brand">$0</p></div>
+            <div><p class="text-slate-600">Total Interest Payable:</p><p id="totalInterest" class="text-2xl font-bold text-brand">$0</p></div>
           </div>
           <p class="text-xs text-slate-500 mt-3">*Estimates only. Not financial advice.</p>
           <div class="mt-5 text-center">
             <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/YOUR-HANDLE/30min'});return false;"
-               class="btn inline-block bg-gold text-brand hover:bg-gold-600 px-6 py-2 font-medium">See if You Qualify — Book a Free Call</a>
+               class="btn inline-block bg-black text-white hover:bg-black/90 px-6 py-2 font-medium">See if You Qualify — Book a Free Call</a>
           </div>
         </div>
       </div>
@@ -327,13 +337,15 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- Big CTA -->
   <section class="py-20 bg-brand text-white">
     <div class="max-w-screen-xl mx-auto px-4 md:px-6 text-center">
       <h2 class="text-3xl font-semibold" data-aos="fade-up">Ready to find your perfect mortgage?</h2>
       <p class="text-lg mt-3 opacity-90" data-aos="fade-up" data-aos-delay="50">Book your free, no-obligation consultation today.</p>
       <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/YOUR-HANDLE/30min'});return false;"
-         class="btn inline-block bg-gold text-brand hover:bg-gold-600 px-8 py-3 mt-8 font-medium shadow-soft" data-aos="fade-up" data-aos-delay="100">Book Free Consultation</a>
+         class="btn inline-block bg-black text-white hover:bg-black/90 px-8 py-3 mt-8 font-medium shadow-soft" data-aos="fade-up" data-aos-delay="100">
+        Book Free Consultation
+      </a>
     </div>
   </section>
 
@@ -356,21 +368,22 @@
             <input type="hidden" name="utm_source" id="utm_source">
             <input type="hidden" name="utm_medium" id="utm_medium">
             <input type="hidden" name="utm_campaign" id="utm_campaign">
+
             <div>
               <label class="block text-sm mb-1" for="name">Full Name*</label>
-              <input id="name" name="name" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
+              <input id="name" name="name" required class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
             </div>
             <div>
               <label class="block text-sm mb-1" for="email">Email*</label>
-              <input id="email" type="email" name="email" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
+              <input id="email" type="email" name="email" required class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
             </div>
             <div>
               <label class="block text-sm mb-1" for="phone">Phone*</label>
-              <input id="phone" name="phone" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
+              <input id="phone" name="phone" required class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
             </div>
             <div>
               <label class="block text-sm mb-1" for="loanType">Loan Type*</label>
-              <select id="loanType" name="loanType" required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
+              <select id="loanType" name="loanType" required class="w-full px-4 py-2 bg-white text-brand border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold">
                 <option value="">Select an option</option>
                 <option value="First Home Buyer">First Home Buyer</option>
                 <option value="Refinance">Refinance</option>
@@ -381,9 +394,9 @@
             </div>
             <div>
               <label class="block text-sm mb-1" for="message">Message</label>
-              <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold"></textarea>
+              <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 bg-white text-brand placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-gold"></textarea>
             </div>
-            <button class="btn w-full bg-brand text-white hover:bg-brand-700 py-3 font-medium shadow-soft">Submit Enquiry</button>
+            <button class="btn w-full bg-black text-white hover:bg-black/90 py-3 font-medium shadow-soft">Submit Enquiry</button>
           </form>
         </div>
       </div>
@@ -391,15 +404,32 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-brand text-white py-10">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-6">
-      <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+  <footer class="bg-brand text-white">
+    <div class="max-w-screen-xl mx-auto px-4 md:px-6 py-12">
+      <div class="grid md:grid-cols-4 gap-10">
         <div>
-          <h3 class="text-xl font-semibold">A.D Brokers</h3>
-          <p class="text-white/80 text-sm mt-2">Your trusted mortgage broker in [Your City, VIC] and surrounds.</p>
+          <div class="flex items-center gap-2">
+            <i data-feather="home" class="w-5 h-5 text-gold"></i>
+            <span class="font-semibold text-lg">A.D Brokers</span>
+          </div>
+          <p class="text-white/80 text-sm mt-3">Your trusted mortgage broker in [Your City, VIC] and surrounds.</p>
+          <div class="flex gap-4 mt-4 text-white/80">
+            <a href="#" aria-label="Facebook" class="hover:text-white"><i data-feather="facebook"></i></a>
+            <a href="#" aria-label="LinkedIn" class="hover:text-white"><i data-feather="linkedin"></i></a>
+            <a href="#" aria-label="Instagram" class="hover:text-white"><i data-feather="instagram"></i></a>
+          </div>
         </div>
         <div>
-          <h4 class="font-semibold mb-2">Quick Links</h4>
+          <h4 class="font-semibold mb-3">Services</h4>
+          <ul class="space-y-2 text-white/80 text-sm">
+            <li><a href="#services" class="hover:text-white">First-Home Loans</a></li>
+            <li><a href="#services" class="hover:text-white">Refinancing</a></li>
+            <li><a href="#services" class="hover:text-white">Investment Loans</a></li>
+            <li><a href="#services" class="hover:text-white">Commercial Loans</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-3">Quick Links</h4>
           <ul class="space-y-2 text-white/80 text-sm">
             <li><a href="#calculator" class="hover:text-white">Repayment Calculator</a></li>
             <li><a href="#process" class="hover:text-white">Our Process</a></li>
@@ -408,7 +438,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="font-semibold mb-2">Contact</h4>
+          <h4 class="font-semibold mb-3">Contact</h4>
           <address class="not-italic text-white/80 text-sm">
             123 Finance Street, [Your City, VIC] 3000<br>
             <a href="tel:+61000000000" class="hover:text-white">0000 000 000</a><br>
@@ -416,17 +446,15 @@
           </address>
         </div>
       </div>
-      <div class="border-t border-white/10 mt-8 pt-6 text-white/70 text-sm">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-3">
-          <span>© 2025 A.D Brokers. All rights reserved.</span>
-          <div class="space-x-4">
-            <a href="#" class="hover:text-white">Privacy Policy</a>
-            <a href="#" class="hover:text-white">Terms of Service</a>
-            <a href="#" class="hover:text-white">Credit Guide</a>
-          </div>
+      <div class="border-t border-white/10 mt-10 pt-6 text-white/70 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+        <span>© 2025 A.D Brokers. All rights reserved.</span>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Service</a>
+          <a href="#" class="hover:text-white">Credit Guide</a>
         </div>
-        <p class="text-xs mt-4">Australian Credit Licence Number: 123456. *Disclaimer: Calculator estimates only; not financial advice.*</p>
       </div>
+      <p class="text-xs text-white/60 mt-4">Australian Credit Licence Number: 123456. *Disclaimer: Calculator estimates only; not financial advice.*</p>
     </div>
   </footer>
 
@@ -449,7 +477,7 @@
       });
     });
 
-    // Robust calculator (handles commas/spaces)
+    // Robust calculator
     function toNum(v){ return parseFloat(String(v).replace(/[^0-9.]/g, '')); }
     const fmt = new Intl.NumberFormat('en-AU', { style:'currency', currency:'AUD' });
 
