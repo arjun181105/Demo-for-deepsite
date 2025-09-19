@@ -1,16 +1,12 @@
-Place your images in this folder and keep the filenames below so index.html works out of the box.
+Assets folder — save images with these exact filenames:
 
-Required files:
-- hero.jpg           (Hero image: happy family / new home)
-- og-image.jpg       (1200x630 social share image)
-- about.jpg          (About/team image)
-- service1.jpg       (First Home Buyers)
-- service2.jpg       (Refinancing)
-- service3.jpg       (Investment Loans)
-- service4.jpg       (Commercial Loans)
-- person1.jpg        (Testimonial avatar 1)
-- person2.jpg        (Testimonial avatar 2)
-- person3.jpg        (Testimonial avatar 3)
-- signature.png      (Optional signature/initials graphic)
-- trust1.png, trust2.png, trust3.png, trust4.png  (Small logos/badges)
-- favicon.ico        (16x16/32x32)
+Required:
+- hero.jpg, og-image.jpg, about.jpg
+- service1.jpg, service2.jpg, service3.jpg, service4.jpg
+- person1.jpg, person2.jpg, person3.jpg
+- trust1.png, trust2.png, trust3.png, trust4.png
+- signature.png, favicon.ico
+
+Notes:
+- Prefer downloading and committing images locally (no hotlinking). Compress with TinyPNG/Squoosh.
+- Update Calendly handle, webhook URL, contact info, and licence number in index.html.
